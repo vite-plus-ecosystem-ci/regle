@@ -53,14 +53,13 @@ catalog:
   publint: 0.3.21
   sass: 1.101.0
   tailwindcss: 4.3.1
-  tsdown: 0.22.2
   tsx: 4.22.4
   type-fest: 5.7.0
   typescript: 6.0.3
   valibot: 1.4.1
-  vite: 8.0.16
-  vitest: 4.1.8
-  vite-plus: 0.2.1
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.fd1ae7eab160c92f3907a20e80e92d2e87403c20
+  vitest: 4.1.9
+  vite-plus: 0.0.0-commit.fd1ae7eab160c92f3907a20e80e92d2e87403c20
   vite-plugin-vue-devtools: 7.7.9
   vue: 3.5.35
   vue-3.4: npm:vue@3.4.38
@@ -68,6 +67,8 @@ catalog:
   vue-router: 5.1.0
   vue-tsc: 3.3.5
   zod: 4.4.3
+  '@vitest/coverage-istanbul': 4.1.9
+  '@vitest/coverage-v8': 4.1.9
 
 engineStrict: true
 optimisticRepeatInstall: false
@@ -87,6 +88,8 @@ minimumReleaseAgeExclude:
   - '@oxlint-tsgolint/*'
   - oxfmt
   - '@oxfmt/*'
+  - vitest
+  - '@vitest/*'
 
 overrides:
   vite: 'catalog:'

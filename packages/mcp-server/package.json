@@ -50,7 +50,7 @@
   "scripts": {
     "typecheck": "tsgo --noEmit",
     "build:docs": "tsx scripts/build-docs-data.ts",
-    "build": "pnpm run build:docs && tsdown",
+    "build": "pnpm run build:docs && vp pack",
     "lint": "vp lint",
     "dev": "pnpm run build:docs && tsx watch src/index.ts",
     "start": "node dist/regle-mcp-server.js",
@@ -67,7 +67,6 @@
     "@typescript/native-preview": "catalog:",
     "dotenv": "17.4.2",
     "publint": "catalog:",
-    "tsdown": "catalog:",
     "tsx": "catalog:",
     "typescript": "catalog:"
   }
