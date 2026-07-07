@@ -36,10 +36,10 @@
   },
   "scripts": {
     "typecheck": "tsgo --noEmit",
-    "build": "tsdown",
-    "build:sourcemaps": "tsdown --config=tsdown.sourcemap.ts",
-    "dev": "tsdown --config=tsdown.dev.ts --watch",
-    "test": "vitest run"
+    "build": "vp pack",
+    "build:sourcemaps": "vp pack --config=tsdown.sourcemap.ts",
+    "dev": "vp pack --config=tsdown.dev.ts --watch",
+    "test": "vp test run"
   },
   "dependencies": {
     "@regle/core": "workspace:*",
@@ -52,7 +52,6 @@
     "@vue/reactivity": "catalog:",
     "@vue/test-utils": "catalog:",
     "publint": "catalog:",
-    "tsdown": "catalog:",
     "type-fest": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:",

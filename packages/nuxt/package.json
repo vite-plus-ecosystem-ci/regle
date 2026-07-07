@@ -63,6 +63,7 @@
     "type-fest": "catalog:",
     "typescript": "catalog:",
     "unbuild": "3.6.1",
+    "vite": "catalog:",
     "vite-plus": "catalog:",
     "vitest": "catalog:",
     "vue": "catalog:",
