@@ -17,6 +17,7 @@
     "type-fest": "catalog:",
     "typescript": "catalog:",
     "valibot": "catalog:",
+    "vite": "catalog:",
     "vite-plus": "catalog:",
     "vitest": "catalog:",
     "vue": "catalog:",
