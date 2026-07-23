@@ -1,6 +1,6 @@
 {
   "name": "@regle/mcp-server",
-  "version": "1.28.3",
+  "version": "1.28.4",
   "description": "MCP Server for Regle",
   "keywords": [
     "ai",
@@ -48,9 +48,9 @@
     "access": "public"
   },
   "scripts": {
-    "typecheck": "tsgo --noEmit",
+    "typecheck": "tsc --noEmit",
     "build:docs": "tsx scripts/build-docs-data.ts",
-    "build": "pnpm run build:docs && tsdown",
+    "build": "pnpm run build:docs && vp pack",
     "lint": "vp lint",
     "dev": "pnpm run build:docs && tsx watch src/index.ts",
     "start": "node dist/regle-mcp-server.js",
@@ -64,10 +64,9 @@
   "devDependencies": {
     "@arethetypeswrong/core": "catalog:",
     "@types/node": "catalog:",
-    "@typescript/native-preview": "catalog:",
+    "@typescript/native": "catalog:",
     "dotenv": "17.4.2",
     "publint": "catalog:",
-    "tsdown": "catalog:",
     "tsx": "catalog:",
     "typescript": "catalog:"
   }

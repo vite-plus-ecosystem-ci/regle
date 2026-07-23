@@ -1,6 +1,6 @@
 {
   "name": "@regle/schemas",
-  "version": "1.28.3",
+  "version": "1.28.4",
   "description": "Schemas adapter for Regle",
   "homepage": "https://reglejs.dev/",
   "license": "MIT",
@@ -35,10 +35,10 @@
     "access": "public"
   },
   "scripts": {
-    "typecheck": "tsgo --noEmit",
-    "build": "tsdown",
-    "build:sourcemaps": "tsdown --config=tsdown.sourcemap.ts",
-    "dev": "tsdown --config=tsdown.dev.ts --watch",
+    "typecheck": "tsc --noEmit",
+    "build": "vp pack",
+    "build:sourcemaps": "vp pack --config=tsdown.sourcemap.ts",
+    "dev": "vp pack --config=tsdown.dev.ts --watch",
     "test": "echo 'no tests'"
   },
   "dependencies": {
@@ -51,10 +51,9 @@
     "@arethetypeswrong/core": "catalog:",
     "@total-typescript/ts-reset": "catalog:",
     "@types/node": "catalog:",
-    "@typescript/native-preview": "catalog:",
+    "@typescript/native": "catalog:",
     "@vue/test-utils": "catalog:",
     "publint": "catalog:",
-    "tsdown": "catalog:",
     "type-fest": "catalog:",
     "typescript": "catalog:",
     "valibot": "catalog:",

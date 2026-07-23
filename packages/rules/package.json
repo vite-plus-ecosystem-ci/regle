@@ -1,6 +1,6 @@
 {
   "name": "@regle/rules",
-  "version": "1.28.3",
+  "version": "1.28.4",
   "description": "Collection of rules and helpers for Regle",
   "homepage": "https://reglejs.dev/",
   "license": "MIT",
@@ -35,11 +35,11 @@
     "access": "public"
   },
   "scripts": {
-    "typecheck": "tsgo --noEmit",
-    "build": "tsdown",
-    "build:sourcemaps": "tsdown --config=tsdown.sourcemap.ts",
-    "dev": "tsdown --config=tsdown.dev.ts --watch",
-    "test": "vitest run"
+    "typecheck": "tsc --noEmit",
+    "build": "vp pack",
+    "build:sourcemaps": "vp pack --config=tsdown.sourcemap.ts",
+    "dev": "vp pack --config=tsdown.dev.ts --watch",
+    "test": "vp test run"
   },
   "dependencies": {
     "@regle/core": "workspace:*",
@@ -48,11 +48,10 @@
   "devDependencies": {
     "@arethetypeswrong/core": "catalog:",
     "@types/node": "catalog:",
-    "@typescript/native-preview": "catalog:",
+    "@typescript/native": "catalog:",
     "@vue/reactivity": "catalog:",
     "@vue/test-utils": "catalog:",
     "publint": "catalog:",
-    "tsdown": "catalog:",
     "type-fest": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:",
