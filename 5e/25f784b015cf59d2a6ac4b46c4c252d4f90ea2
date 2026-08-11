@@ -1,0 +1,89 @@
+.npmrc
+  s_fdbdae8c09ca7c::t_17558ebebe92f8 1-2
+packages-private/regle-playground/src/download/template/vite.config.js
+  s_fdbdae8c09ca7c::t_9afc6872bd8cb7 1
+packages/core/package.json
+  s_fdbdae8c09ca7c::t_d8c87af05b172d 52-54
+packages/core/tsdown.config.ts
+  s_fdbdae8c09ca7c::t_e750dcd08b32cb 1
+packages/core/tsdown.dev.ts
+  s_fdbdae8c09ca7c::t_09f91a364284e6 1
+packages/core/tsdown.sourcemap.ts
+  s_fdbdae8c09ca7c::t_d9b022cf102fd2 1
+packages/mcp-server/package.json
+  s_fdbdae8c09ca7c::t_9b9ca85c048979 53
+packages/mcp-server/tsdown.config.ts
+  s_fdbdae8c09ca7c::t_5a103dd3cd6b76 1
+packages/nuxt/package.json
+  s_fdbdae8c09ca7c::t_f907cda99d9ed8 66
+packages/nuxt/test/fixtures/app/test-nuxt.types.spec-d.ts
+  s_fdbdae8c09ca7c::t_c2b5463b8f7d5c 3
+packages/rules/package.json
+  s_fdbdae8c09ca7c::t_5088ea35df38f8 39-42
+packages/rules/src/utils/tests/getLocale.spec.ts
+  s_fdbdae8c09ca7c::t_93e22b92453396 1
+packages/rules/tsdown.config.ts
+  s_fdbdae8c09ca7c::t_bd59f2d25abd42 1
+packages/rules/tsdown.dev.ts
+  s_fdbdae8c09ca7c::t_0e38d34d8b7540 1
+packages/rules/tsdown.sourcemap.ts
+  s_fdbdae8c09ca7c::t_5186f3e670a112 1
+packages/schemas/package.json
+  s_fdbdae8c09ca7c::t_8116bac16bee0d 39-41
+packages/schemas/tsdown.config.ts
+  s_fdbdae8c09ca7c::t_e1cb59e6fcb3c6 1
+packages/schemas/tsdown.dev.ts
+  s_fdbdae8c09ca7c::t_7eba4c20c61193 1
+packages/schemas/tsdown.sourcemap.ts
+  s_fdbdae8c09ca7c::t_ae7d1fa0f9358f 1
+packages/shared/tests/abortablePromise.spec.ts
+  s_fdbdae8c09ca7c::t_36345995dde303 1
+packages/shared/tests/cloneDeep.spec.ts
+  s_fdbdae8c09ca7c::t_ff07e0caf2f12a 1
+packages/shared/tests/debounce.spec.ts
+  s_fdbdae8c09ca7c::t_c1e753e0acd9a7 1
+packages/shared/tests/isDate.spec.ts
+  s_fdbdae8c09ca7c::t_6184ac17d04193 1
+packages/shared/tests/isEqual.spec.ts
+  s_fdbdae8c09ca7c::t_e1c2307c730b5a 1
+packages/shared/tests/isFile.spec.ts
+  s_fdbdae8c09ca7c::t_d066faf995b0d6 1
+packages/shared/tests/object.utils.spec.ts
+  s_fdbdae8c09ca7c::t_5d3ab64078ff1e 1
+packages/shared/tests/toDate.spec.ts
+  s_fdbdae8c09ca7c::t_c11e2fec220708 1
+packages/shared/tests/toReactive.spec.ts
+  s_fdbdae8c09ca7c::t_6c1344df017dd3 1
+pnpm-workspace.yaml
+  s_fdbdae8c09ca7c::t_526f95ea43a046 66,68,76-77,98-99
+scripts/size-limit-consumer/vite.config.ts
+  s_fdbdae8c09ca7c::t_bbcd0faf0a22a2 3
+tests/package.json
+  s_fdbdae8c09ca7c::t_f33fdde9b71be9 21
+tests/unit/types/recursive-validation-result.spec-d.ts
+  s_fdbdae8c09ca7c::t_374a956a9c6079 3
+tests/unit/types/regle-partial-rule-tree-input.spec-d.ts
+  s_fdbdae8c09ca7c::t_27d0aec521a90d 1
+tests/unit/types/regle-rule-decl-input.spec-d.ts
+  s_fdbdae8c09ca7c::t_50ea311b6f958c 1
+tests/unit/types/regle-status-empty-generics.spec-d.ts
+  s_fdbdae8c09ca7c::t_569e7215744942 3
+tsdown.common.build.ts
+  s_fdbdae8c09ca7c::t_06f0621c96e260 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "5e25f784b015cf59d2a6ac4b46c4c252d4f90ea2",
+  "prompts": {},
+  "sessions": {
+    "s_fdbdae8c09ca7c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1202c2a1-3a3c-4672-9642-5e437556b1a7",
+        "model": "claude-opus-5"
+      },
+      "human_author": "MK <fengmk2@gmail.com>"
+    }
+  }
+}
