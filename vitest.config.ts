@@ -34,6 +34,8 @@ export default defineConfig({
     __IS_DEV__: false,
   },
   test: {
+    clearMocks: false,
+    sharedViteServer: false,
     globals: true,
     coverage: {
       provider: 'v8',
