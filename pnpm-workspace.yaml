@@ -81,6 +81,9 @@ verifyDepsBeforeRun: false
 minimumReleaseAge: 0
 minimumReleaseAgeExclude:
   # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - vitest
+  - '@vitest/*'
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
   - '@oxc-project/*'
   - tinybench
   - yuku-core
