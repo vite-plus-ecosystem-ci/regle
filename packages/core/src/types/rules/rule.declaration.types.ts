@@ -165,9 +165,8 @@ export type RegleRuleDecl<
     boolean,
     infer TMetadata
   >
-    ?
-        | RegleRuleDefinitionLight<ParamsToLooseParams<TParams>, boolean, TMetadata>
-        | InlineRuleDeclaration<TValue, ParamsToLooseParams<TParams>, any>
+    ? | RegleRuleDefinitionLight<ParamsToLooseParams<TParams>, boolean, TMetadata>
+      | InlineRuleDeclaration<TValue, ParamsToLooseParams<TParams>, any>
     : TCustomRules[TKey];
 } & { [x: string]: FormRuleDeclaration<TValue, any[]> | boolean | number | undefined | RegleImmediateDirtyMode };
 

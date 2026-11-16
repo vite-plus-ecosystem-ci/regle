@@ -56,35 +56,33 @@ export type RegleExternalErrorTree<TState = MaybeRef<Record<string, any> | any[]
     ? any
     : IsUnknown<TState> extends true
       ? any
-      :
-          | ({
-              [K in keyof JoinDiscriminatedUnions<UnwrapMaybeRef<TState>>]?: RegleValidationErrors<
-                JoinDiscriminatedUnions<UnwrapMaybeRef<TState>>[K],
-                true,
-                TSchema
-              >;
-            } & {
-              $self?: RegleFieldIssue[];
-            })
-          | Partial<Record<Paths<TState> | (string & {}), string[]>>;
+      : | ({
+            [K in keyof JoinDiscriminatedUnions<UnwrapMaybeRef<TState>>]?: RegleValidationErrors<
+              JoinDiscriminatedUnions<UnwrapMaybeRef<TState>>[K],
+              true,
+              TSchema
+            >;
+          } & {
+            $self?: RegleFieldIssue[];
+          })
+        | Partial<Record<Paths<TState> | (string & {}), string[]>>;
 
 export type RegleExternalIssueTree<TState = MaybeRef<Record<string, any> | any[]>, TSchema extends boolean = false> =
   IsAny<TState> extends true
     ? any
     : IsUnknown<TState> extends true
       ? any
-      :
-          | ({
-              [K in keyof JoinDiscriminatedUnions<UnwrapMaybeRef<TState>>]?: RegleValidationErrors<
-                JoinDiscriminatedUnions<UnwrapMaybeRef<TState>>[K],
-                true,
-                true,
-                TSchema
-              >;
-            } & {
-              $self?: RegleExternalFieldIssue[];
-            })
-          | Partial<Record<Paths<TState> | (string & {}), RegleExternalFieldIssue[]>>;
+      : | ({
+            [K in keyof JoinDiscriminatedUnions<UnwrapMaybeRef<TState>>]?: RegleValidationErrors<
+              JoinDiscriminatedUnions<UnwrapMaybeRef<TState>>[K],
+              true,
+              true,
+              TSchema
+            >;
+          } & {
+            $self?: RegleExternalFieldIssue[];
+          })
+        | Partial<Record<Paths<TState> | (string & {}), RegleExternalFieldIssue[]>>;
 
 export type RegleExternalSchemaErrorTree<
   TState = MaybeRef<Record<string, any> | any[]>,
