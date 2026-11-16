@@ -117,9 +117,8 @@ export type UnwrapRuleTree<T extends { [x: string]: RegleRuleRawInput<any, any[]
 export type UnwrapRuleWithParams<T extends RegleRuleRawInput<any, any[], any, any> | undefined> =
   T extends RegleRuleWithParamsDefinition<infer TType, infer TValue, infer TParams, infer TAsync, infer TMetadata>
     ? HasOptionalParams<TParams> extends true
-      ?
-          | RegleRuleWithParamsDefinition<TType, TValue, TParams, TAsync, TMetadata>
-          | RegleRuleDefinition<TType, TValue, TParams, TAsync, TMetadata>
+      ? | RegleRuleWithParamsDefinition<TType, TValue, TParams, TAsync, TMetadata>
+        | RegleRuleDefinition<TType, TValue, TParams, TAsync, TMetadata>
       : RegleRuleDefinition<TType, TValue, TParams, TAsync, TMetadata>
     : T;
 
