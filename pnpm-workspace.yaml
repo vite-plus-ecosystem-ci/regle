@@ -47,7 +47,6 @@ catalog:
   publint: 0.3.25
   sass: 1.105.1
   tailwindcss: 4.3.3
-  tsdown: 0.23.0
   tsx: 4.23.15
   type-fest: 5.10.0
   # TypeScript 7 native compiler (tsc). Kept under an alias so the `typescript`
@@ -57,15 +56,17 @@ catalog:
   '@typescript/native': npm:typescript@7.0.2
   typescript: 6.0.3
   valibot: 1.5.0
-  vite: npm:@voidzero-dev/vite-plus-core@1.1.0
-  vitest: 5.0.3
-  vite-plus: 1.1.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
+  vitest: 5.1.1
+  vite-plus: 0.0.0-commit.8ec336609b9c3dee6c269c374904b008233dadb8
   vite-plugin-vue-devtools: 8.2.1
   vue: 3.5.43
   vue-eslint-parser: 10.4.1
   vue-router: 5.3.1
   vue-tsc: 3.3.12
   zod: 4.6.5
+  '@vitest/coverage-istanbul': 5.1.1
+  '@vitest/coverage-v8': 5.1.1
 
 engineStrict: true
 optimisticRepeatInstall: false
@@ -96,14 +97,14 @@ minimumReleaseAgeExclude:
   - '@oxlint-tsgolint/*'
   - oxfmt
   - '@oxfmt/*'
+  - tsrs
+  - '@tsrs/*'
 # semver@6.3.1 is npm's 2023 ReDoS backport for the 6.x line, published without provenance
 # after 7.5.2 had it. Required by @babel/core, so the trust-downgrade check is a false positive.
 trustPolicyExclude:
   - semver@6.3.1
 
 overrides:
-  vite: 'catalog:'
-  vitest: 'catalog:'
   # @typescript/native is aliased to npm:typescript@7 for the native tsc CLI, but that
   # second `typescript` package must not fork vue/pinia peer graphs. Pinia's
   # skipHydrate uses a per-module Symbol(); dual pinia copies break Nuxt SSR payload
@@ -111,6 +112,8 @@ overrides:
   'vue>typescript': 'catalog:'
   'pinia>typescript': 'catalog:'
   '@vue/server-renderer>typescript': 'catalog:'
+  vite@*: 'catalog:'
+  vitest@*: 'catalog:'
 peerDependencyRules:
   allowAny:
     - vite
